@@ -1,27 +1,48 @@
-# Pokedex
+<p align="center"><img  src="https://archives.bulbagarden.net/media/upload/4/4b/Pok%C3%A9dex_logo.png" alt="Logo"/></p>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.1.
+<h1 align="center">Pokédex</h1>
 
-## Development server
+Un Pokédex réalisé en Angular afin d'approfondir le framework [Angular](https://angular.io/ "Framework Angular")
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Ce projet a été généré avec [Angular CLI](https://github.com/angular/angular-cli) version 15.0.1.
+## Demonstration
 
-## Code scaffolding
+Pas encore disponible
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Run Locally
 
-## Build
+Cloner le projet
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+```bash
+  git clone https://github.com/meleadr/pokedex.git
+```
 
-## Running unit tests
+Aller dans le dossier du projet
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```bash
+  cd pokedex
+```
 
-## Running end-to-end tests
+Installer les dépendances
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```bash
+  npm install -g @angular/cli
+```
 
-## Further help
+Démarrer le projet en dev
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```bash
+  ng serve
+```
+
+Naviguer sur `http://localhost:4200/`.
+
+
+## Déploiement
+
+Aucun
+
+
+## Auteur
+
+- [@meleadr](https://www.github.com/meleadr)
