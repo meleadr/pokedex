@@ -1,0 +1,18 @@
+<div class="wrapper">
+  <mat-card>
+    <form>
+      <mat-form-field>
+        <mat-label>Email</mat-label>
+        <input matInput name="email" type="email">
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Password</mat-label>
+        <input matInput name="password" type="password">
+      </mat-form-field>
+      <mat-card-actions>
+        <mat-checkbox>Remember me</mat-checkbox>
+        <button mat-raised-button color="primary" (click)="onLogin()">Login</button>
+      </mat-card-actions>
+    </form>
+  </mat-card>
+</div>

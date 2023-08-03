@@ -1,0 +1,26 @@
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 70vh;
+}
+
+mat-card{
+  text-align: center;
+  width: 50vw;
+  padding: 20px;
+
+  img{
+    margin: 0 auto;;
+  }
+
+  mat-form-field{
+    width: 100%;
+  }
+
+  mat-card-actions{
+    display: flex;
+    justify-content: space-around;
+  }
+}
