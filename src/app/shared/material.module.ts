@@ -11,6 +11,7 @@ import {MatCheckboxModule} from "@angular/material/checkbox";
 import {MatRadioModule} from "@angular/material/radio";
 import {MatProgressSpinnerModule} from "@angular/material/progress-spinner";
 import {MatSelectModule} from "@angular/material/select";
+import {MatSlideToggleModule} from "@angular/material/slide-toggle";
 
 
 
@@ -27,7 +28,8 @@ import {MatSelectModule} from "@angular/material/select";
     MatCheckboxModule,
     MatRadioModule,
     MatProgressSpinnerModule,
-    MatSelectModule
+    MatSelectModule,
+    MatSlideToggleModule
   ]
 })
 export class MaterialModule { }
