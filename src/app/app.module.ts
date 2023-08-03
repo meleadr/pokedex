@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {CoreModule} from "./core/core.module";
 import {SharedModule} from "./shared/shared.module";
 import {LandingPageModule} from "./landing-page/landing-page.module";
+import {AuthModule} from "./auth/auth.module";
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import {LandingPageModule} from "./landing-page/landing-page.module";
         BrowserAnimationsModule,
         CoreModule,
         LandingPageModule,
-        SharedModule
+        SharedModule,
+        AuthModule
     ],
   providers: [],
   bootstrap: [AppComponent]
