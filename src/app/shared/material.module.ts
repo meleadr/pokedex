@@ -29,7 +29,7 @@ import {MatSlideToggleModule} from "@angular/material/slide-toggle";
     MatRadioModule,
     MatProgressSpinnerModule,
     MatSelectModule,
-    MatSlideToggleModule
+    MatSlideToggleModule,
   ]
 })
 export class MaterialModule { }
