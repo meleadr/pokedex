@@ -14,11 +14,13 @@
     <mat-card-title>Newsletter</mat-card-title>
     <mat-card-content>
       <p>Vous pouvez vous inscrire à notre newsletter pour recevoir les dernières informations sur les pokémons.</p>
-      <form class="example-form">
+      <form class="example-form" #emailForm="ngForm" (ngSubmit)="onSubscribe(emailForm)">
         <mat-form-field class="example-full-width">
-          <input matInput placeholder="Email" value="">
+          <mat-label>Email</mat-label>
+          <input matInput [(ngModel)]="userEmail" name="userEmail" type="email">
+          <mat-error>Email invalid</mat-error>
         </mat-form-field>
-        <button mat-raised-button color="primary">S'inscrire</button>
+        <button mat-raised-button color="primary" type="submit">S'inscrire</button>
       </form>
     </mat-card-content>
   </mat-card>
