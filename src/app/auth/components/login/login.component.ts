@@ -12,6 +12,6 @@ export class LoginComponent {
   constructor(private router: Router, private authService: AuthService) {}
   onLogin() {
     this.authService.login();
-    this.router.navigateByUrl('/');
+    this.router.navigateByUrl('/pokemons');
   }
 }
