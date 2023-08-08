@@ -12,6 +12,7 @@ import {MatRadioModule} from "@angular/material/radio";
 import {MatProgressSpinnerModule} from "@angular/material/progress-spinner";
 import {MatSelectModule} from "@angular/material/select";
 import {MatSlideToggleModule} from "@angular/material/slide-toggle";
+import {MatProgressBarModule} from "@angular/material/progress-bar";
 
 
 
@@ -30,6 +31,7 @@ import {MatSlideToggleModule} from "@angular/material/slide-toggle";
     MatProgressSpinnerModule,
     MatSelectModule,
     MatSlideToggleModule,
+    MatProgressBarModule
   ]
 })
 export class MaterialModule { }
