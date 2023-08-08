@@ -1,2 +1,29 @@
-<p *ngFor="let pokemons of pokemons$ | async"> coucou</p>
-<p *ngIf="loading$">Loading</p>
+<div class="actions">
+  <mat-form-field>
+    <input matInput placeholder="Search for a pokemon">
+  </mat-form-field>
+</div>
+<div class="container">
+  <mat-spinner *ngIf="loading$ | async" mode="indeterminate"></mat-spinner>
+  <div class="pokemon" *ngFor="let pokemon of pokemons$ | async">
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>{{ pokemon.name | titlecase}}</mat-card-title>
+      </mat-card-header>
+      <img mat-card-lg-image [src]="pokemon.sprites.front_default" [alt]="pokemon.name">
+      <mat-card-content>
+        <p>Height: {{ pokemon.height }}</p>
+        <p>Weight: {{ pokemon.weight }}</p>
+
+        <p>Types:
+          <span *ngFor="let type of pokemon.types">
+            {{ type.type.name | titlecase }}
+          </span>
+        </p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-raised-button color="primary" [routerLink]="['/pokemon', pokemon.id]">Details</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>

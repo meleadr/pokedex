@@ -1,7 +1,8 @@
 import {ChangeDetectionStrategy, Component, OnInit} from '@angular/core';
 import {Observable} from "rxjs";
-import {Pokemon} from "../../models/pokemon.model";
 import {PokemonsService} from "../../services/pokemons.service";
+import {PokemonList} from "../../models/pokemon-list.model";
+import {Pokemon} from "../../models/pokemon.model";
 
 @Component({
   selector: 'app-pokemon-list',
