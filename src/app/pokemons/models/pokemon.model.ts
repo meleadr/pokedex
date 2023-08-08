@@ -4,7 +4,7 @@ export class Pokemon {
   sprites!: {
     front_default: string;
     back_default: string;
-  }
+  };
   types!: Array<{
     slot: number;
     type: {
@@ -18,8 +18,8 @@ export class Pokemon {
     stat: {
       name: string;
       url: string;
-    }
-  }
+    };
+  };
   weight!: number;
   height!: number;
   order!: number;

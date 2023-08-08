@@ -1,4 +1,4 @@
-export class PokemonOverview{
-    name!: string;
-    url!: string;
+export class PokemonOverview {
+  name!: string;
+  url!: string;
 }

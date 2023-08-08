@@ -1,16 +1,16 @@
-import {Injectable} from "@angular/core";
+import { Injectable } from '@angular/core';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class AuthService {
   private token!: string;
 
-  getToken() :string{
+  getToken(): string {
     return this.token;
   }
 
-  login(): void{
+  login(): void {
     this.token = 'MyFakeToken';
   }
 }

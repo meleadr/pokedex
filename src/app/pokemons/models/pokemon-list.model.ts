@@ -5,5 +5,5 @@ export class PokemonList {
   results!: {
     name: string;
     url: string;
-  }
+  };
 }

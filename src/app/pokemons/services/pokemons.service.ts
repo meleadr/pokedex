@@ -35,13 +35,13 @@ export class PokemonsService {
       .get<any>(`${this.url}?limit=20`)
       .pipe(
         delay(1000),
-        tap((pokemonList) => {
+        tap(pokemonList => {
           this.lastPokemonsLoaded = Date.now();
           pokemonList.results.forEach((pokemon: PokemonOverview) => {
             this.http
               .get<Pokemon>(pokemon.url)
               .pipe(
-                tap((pokemon) => {
+                tap(pokemon => {
                   this._pokemons$.next([
                     ...this._pokemons$.getValue(),
                     pokemon,

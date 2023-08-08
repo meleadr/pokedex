@@ -1,17 +1,16 @@
-import {ChangeDetectionStrategy, Component, OnInit} from '@angular/core';
-import {Observable} from "rxjs";
-import {PokemonsService} from "../../services/pokemons.service";
-import {PokemonList} from "../../models/pokemon-list.model";
-import {Pokemon} from "../../models/pokemon.model";
+import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { PokemonsService } from '../../services/pokemons.service';
+import { PokemonList } from '../../models/pokemon-list.model';
+import { Pokemon } from '../../models/pokemon.model';
 
 @Component({
   selector: 'app-pokemon-list',
   templateUrl: './pokemon-list.component.html',
   styleUrls: ['./pokemon-list.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class PokemonListComponent implements OnInit{
-
+export class PokemonListComponent implements OnInit {
   loading$!: Observable<boolean>;
   pokemons$!: Observable<Pokemon[]>;
 
