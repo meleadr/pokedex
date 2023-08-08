@@ -5,13 +5,13 @@ export class Pokemon {
     front_default: string;
     back_default: string;
   }
-  types!: {
+  types!: Array<{
     slot: number;
     type: {
       name: string;
       url: string;
-    }
-  }
+    };
+  }>;
   stats!: {
     base_stat: number;
     effort: number;
